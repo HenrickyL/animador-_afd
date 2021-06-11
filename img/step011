@@ -1,0 +1,21 @@
+digraph {
+	rankdir=LR
+	node [shape=point]
+	"" [color=white]
+	node [shape=doubleoctagon]
+	s0 [color=blue2]
+	"" -> s0 [label=i color=black]
+	node [shape=circle]
+	s1 [color=black]
+	node [shape=circle]
+	s2 [color=black]
+	s0 -> s0 [label=0 color=black]
+	s0 -> s1 [label=1 color=black]
+	s1 -> s2 [label=0 color=black]
+	s1 -> s0 [label=1 color=black]
+	s2 -> s1 [label=0 color=black]
+	s2 -> s2 [label=1 color=red]
+	s2 [fillcolor=red3 style=filled]
+	label="|001011001|"
+	fontsize=20
+}
